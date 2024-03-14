@@ -15,13 +15,14 @@ const Login = () => {
     axios.post('http://localhost:3001/login', { email, password })
       .then(result => {
         console.log(result);
-
-        if (result.data === "Success") {
-          navigate('/dashboard');
+        const { restaurantName } = result.data;
+  
+        if (result.data.status === "Success") {
+          navigate(`/dashboard/${restaurantName}`);
         }
       });
   };
-
+  
   return (
     <div style={styles.container}>
         <div style={styles.cards}>

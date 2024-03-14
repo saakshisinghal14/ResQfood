@@ -18,23 +18,26 @@ RestaurantModel.create(req.body).then(restaurants=>
 
 
 })
-app.post('/login',(req,res)=>{
-    const {email,password} = req.body;
-    RestaurantModel.findOne({email:email})
-    .then (user=>{
-        if(user){
-            if(user.password===password){
-                res.json("Success")
+// Update the server response for successful login
+app.post('/login', (req, res) => {
+    const { email, password } = req.body;
+    RestaurantModel.findOne({ email: email })
+      .then(user => {
+        if (user) {
+          if (user.password === password) {
+            res.json({ status: "Success", restaurantName: user.restaurantName });
+          } else {
+            res.json({ status: "IncorrectPassword" });
+          }
+        } else {
+          res.json({ status: "NoRecordExists" });
         }
-        else{
-          res.json("the password is incorrect")
-        }
-    }
-else{
-    res.json("No record existed")
-}
-})
-})
+      })
+      .catch(err => {
+        res.json({ status: "Error", error: err.message });
+      });
+  });
+  
 
 app.listen(3001,()=>{
     console.log("server is running")

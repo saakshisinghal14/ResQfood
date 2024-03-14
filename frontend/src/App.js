@@ -21,8 +21,9 @@ function App() {
      <Route exact path='/addres'  element={<AddRest/>}></Route>
      <Route exact path='/rest'  element={<Restaurent/>}></Route>
      <Route exact path='/ngo'  element={<Ngo/>}></Route>
-     <Route exact path='/dashboard'  element={<Restaurantdashboard/>}></Route>
      
+     <Route exact path='/dashboard/:Id' element={<Restaurantdashboard />} />
+
      
   
     <Route exact path='/'  element={<Home/>}></Route>
