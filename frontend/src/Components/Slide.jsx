@@ -5,12 +5,18 @@ import 'slick-carousel/slick/slick-theme.css';
 
 // Ensure correct import paths for images
 import child from '../assets/banner/child.jpg';
-import hungry from '../assets/banner/hunrychild.jpg';
+import child1 from '../assets/banner/child1.jpg';
+import child2 from '../assets/banner/child2.jpg';
+
+import child3 from '../assets/banner/child3.jpg';
+
+
+
 
 const Slide = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = [child, hungry];
+  const images = [child2,child3,child,];
 
   useEffect(() => {
     const interval = setInterval(() => {

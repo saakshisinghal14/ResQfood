@@ -1,0 +1,106 @@
+.anamita-1-icon {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+  width: 639px;
+  object-fit: cover;
+}
+.ngo-connections {
+  height: 187px;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  z-index: 5;
+}
+.ngo-connections-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-3xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.annamritafoundation {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 117.5%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.annamrita-foundation-started,
+.blank-line1,
+.chembur-mumbai {
+  margin: 0;
+}
+.infoannamritaorg1 {
+  color: inherit;
+}
+.infoannamritaorg {
+  margin: 0;
+}
+.annamritafoundationstartedamis {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 160%;
+  color: var(--color-gray-200);
+  mix-blend-mode: linear-dodge;
+}
+.annamritafoundation-parent {
+  width: 650px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.annamritafoundation-parent,
+.frame-parent3,
+.frame-wrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frame-parent3 {
+  width: 1470px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-32xl);
+}
+.frame-wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-white);
+  font-family: var(--text-md-semibold);
+}
+@media screen and (max-width: 800px) {
+  .annamritafoundation {
+    font-size: var(--font-size-13xl);
+    line-height: 38px;
+  }
+  .annamritafoundation-parent {
+    gap: 16px 32px;
+  }
+  .frame-parent3 {
+    gap: 25px 51px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .annamritafoundation {
+    font-size: var(--font-size-5xl);
+    line-height: 28px;
+  }
+  .annamritafoundationstartedamis {
+    font-size: var(--text-md-semibold-size);
+    line-height: 26px;
+  }
+}

@@ -1,14 +1,20 @@
-// Login.js
+// Login.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
 import bg from '../assets/loginbg.jpg';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
+
+
+
+
+
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
+  const [checkpassword, setcheckPassword] = useState('');
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -18,7 +24,12 @@ const Login = () => {
         const { restaurantName } = result.data;
   
         if (result.data.status === "Success") {
-          navigate(`/dashboard/${restaurantName}`);
+        
+          navigate(`/dashboard/${restaurantName}`, { state: { loggedInUserEmail: email } });
+        }
+        else if(result.data.status === "IncorrectPassword"){
+          setcheckPassword("invalid password");
+ 
         }
       });
   };
@@ -69,7 +80,7 @@ const Login = () => {
           </label>
           <br />
           <label>
-            Password:
+            Password:{checkpassword}
             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} style={styles.input} />
           </label>
           <br />
@@ -84,6 +95,10 @@ const Login = () => {
           <Link to='/signup' className='btn btn-default border w-100  rounded-0 text-decoration-none' style={{ background: '#455860', color:'white'}}>
             Signup
           </Link>
+          <Link to='/' className='btn btn-default border w-100  rounded-0 text-decoration-none' style={{ background: '#33a2d2', color:'white',margin:'1rem'}}>
+            Back to Home Page
+          </Link>
+          
         </div>
     </div>
     </div>
@@ -96,7 +111,7 @@ const styles = {
     justifyContent: 'space-around',
     alignItems: 'center',
     height: '100vh',
-    backgroundImage: `url(${bg})`,
+    backgroundImage:` url(${bg})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundAttachment:' fixed',
@@ -104,7 +119,7 @@ const styles = {
   },
   logo:{
     height:"100px",
-    width: "100px",
+    width: "150px",
     marginTop: "13px",
   },
   card: {

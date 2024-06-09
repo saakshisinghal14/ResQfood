@@ -1,5 +1,3 @@
-
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -8,7 +6,9 @@ import Addngo from "./pages/Addngo";
 import AddRest from "./pages/AddRest"
 import Restaurantdashboard from "./pages/RestaurantDashboard";
 import Restaurent from "./pages/Restaurent";
-import Ngo from "./pages/Ngo";
+
+import Logout from "./pages/Logout";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -20,11 +20,12 @@ function App() {
      <Route exact path='/addngo'  element={<Addngo/>}></Route>
      <Route exact path='/addres'  element={<AddRest/>}></Route>
      <Route exact path='/rest'  element={<Restaurent/>}></Route>
-     <Route exact path='/ngo'  element={<Ngo/>}></Route>
+     <Route exact path='/about'  element={<About/>}></Route>
      
      <Route exact path='/dashboard/:Id' element={<Restaurantdashboard />} />
+     <Route exact path='/logout' element={<Logout />} />
 
-     
+
   
     <Route exact path='/'  element={<Home/>}></Route>
 

@@ -1,0 +1,128 @@
+.nofoodwaste-1-icon {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 491px;
+  max-height: 100%;
+  width: 421px;
+  object-fit: cover;
+}
+.frame2 {
+  height: 379px;
+  width: 912px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 5;
+}
+.frame-frame {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.b2,
+.no-food-waste {
+  align-self: stretch;
+  position: relative;
+}
+.b2 {
+  height: 165px;
+  line-height: 110%;
+  display: none;
+}
+.no-food-waste {
+  margin: 0;
+  font-size: var(--font-size-21xl);
+  line-height: 117.5%;
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--color-white);
+  flex-shrink: 0;
+  debug_commit: 2554057;
+}
+.blank-line2,
+.coimbatore-tamilnadu,
+.infonofoodwasteorg,
+.no-food-waste1 {
+  margin: 0;
+}
+.no-food-waste-container {
+  align-self: stretch;
+  height: 256px;
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 160%;
+  color: var(--color-gray-200);
+  display: inline-block;
+  flex-shrink: 0;
+  debug_commit: 2554057;
+}
+.frame-parent4,
+.logos-and-images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.logos-and-images {
+  align-self: stretch;
+  overflow: hidden;
+  padding: 0 var(--padding-28xl) var(--padding-237xl) var(--padding-744xl);
+  gap: var(--gap-13xl);
+}
+.frame-parent4 {
+  width: 1460px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-131xl);
+  color: var(--color-mintcream);
+  font-family: var(--text-md-semibold);
+}
+@media screen and (max-width: 1350px) {
+  .logos-and-images {
+    padding-left: var(--padding-362xl);
+    padding-right: var(--padding-4xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .b2 {
+    font-size: var(--font-size-41xl);
+    line-height: 99px;
+  }
+  .no-food-waste {
+    font-size: var(--font-size-13xl);
+    line-height: 38px;
+  }
+  .logos-and-images {
+    gap: 16px 32px;
+    padding-left: var(--padding-171xl);
+    padding-bottom: var(--padding-147xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .b2 {
+    font-size: var(--font-size-18xl);
+    line-height: 66px;
+  }
+  .no-food-waste {
+    font-size: var(--font-size-5xl);
+    line-height: 28px;
+  }
+  .no-food-waste-container {
+    font-size: var(--text-md-semibold-size);
+    line-height: 26px;
+  }
+  .logos-and-images {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

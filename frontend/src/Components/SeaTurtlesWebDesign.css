@@ -1,0 +1,235 @@
+.b,
+.b1 {
+  width: 579px;
+  height: 165px;
+  position: relative;
+  line-height: 110%;
+  display: none;
+  max-width: 100%;
+  z-index: 1;
+}
+.b1 {
+  width: 650px;
+  z-index: 2;
+}
+.frame-icon {
+  position: absolute;
+  top: -426px;
+  left: -3050.5px;
+  width: 7829px;
+  height: 6500px;
+  overflow: hidden;
+  z-index: 3;
+}
+.lines-icon {
+  height: 3587.8px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 4;
+}
+.gettyimages-535555239-612x6121-icon {
+  position: absolute;
+  top: 0;
+  left: 829px;
+  border-radius: var(--br-11xl);
+  width: 408px;
+  height: 411px;
+  object-fit: cover;
+}
+.privacy-policy-link {
+  height: 480px;
+  width: 1330px;
+  position: absolute;
+  margin: 0 !important;
+  top: 770.5px;
+  right: -31px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 7;
+}
+.gettyimages-472165353-612x612-icon {
+  position: absolute;
+  top: 136px;
+  left: 98px;
+  border-radius: var(--br-11xl);
+  width: 439px;
+  height: 389px;
+  object-fit: cover;
+}
+.food-waste-organisation {
+  height: 719px;
+  width: 1379px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: 1268.3px;
+  left: -39px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 7;
+}
+.frame-parent,
+.lines-parent {
+  position: absolute;
+  max-width: 100%;
+}
+.lines-parent {
+  top: 1546.5px;
+  left: 207px;
+  width: 1314px;
+  height: 3587.8px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-parent {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.frame-group {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 204px;
+  box-sizing: border-box;
+  gap: 314px;
+  max-width: 100%;
+}
+.removebg-preview-1-icon {
+  height: 228px;
+  width: 271px;
+  position: relative;
+  object-fit: cover;
+}
+.grapes-removebg-preview-2-icon {
+  position: absolute;
+  top: -419px;
+  left: -189.4px;
+  width: 941px;
+  height: 980px;
+  object-fit: contain;
+}
+.home-icon {
+  height: 906px;
+  width: 305px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.apple-removebg-preview-1-icon {
+  height: 360.4px;
+  width: 427.9px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: 79.6px;
+  left: -86px;
+  object-fit: contain;
+}
+.back-to-top-button,
+.sea-turtles-web-design,
+.search-icon {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.search-icon {
+  height: 879px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 651px;
+  position: relative;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.back-to-top-button,
+.sea-turtles-web-design {
+  width: 100%;
+  justify-content: flex-start;
+}
+.back-to-top-button {
+  margin: 0 !important;
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+  left: 0;
+  flex-direction: row;
+  padding: 0 0 4900px;
+  max-width: 100%;
+  height: 100%;
+  z-index: 6;
+}
+.sea-turtles-web-design {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #651e3e,
+    #681d3d 29.06%,
+    #d7326d 52.9%,
+    #711a39
+  );
+  flex-direction: column;
+  padding: 66.09999999999991px 58px 71px 134px;
+  gap: 337px;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-131xl);
+  color: var(--color-mintcream);
+  font-family: var(--text-md-semibold);
+}
+@media screen and (max-width: 1350px) {
+  .frame-group {
+    gap: 157px 314px;
+    padding-bottom: 133px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .frame-group {
+    padding-bottom: var(--padding-67xl);
+    box-sizing: border-box;
+  }
+  .sea-turtles-web-design {
+    gap: 168px 337px;
+    padding-left: 67px;
+    padding-right: 29px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .b,
+  .b1 {
+    font-size: var(--font-size-41xl);
+    line-height: 99px;
+  }
+  .frame-group {
+    gap: 78px 314px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .b,
+  .b1 {
+    font-size: var(--font-size-18xl);
+    line-height: 66px;
+  }
+  .frame-group {
+    gap: 39px 314px;
+    padding-bottom: var(--padding-37xl);
+    box-sizing: border-box;
+  }
+  .sea-turtles-web-design {
+    gap: 84px 337px;
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

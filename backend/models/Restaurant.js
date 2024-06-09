@@ -1,3 +1,5 @@
+//Restaurant.js
+
 const mongoose=require('mongoose');
 
 
@@ -7,12 +9,14 @@ const RestaurantSchema= new mongoose.Schema({
       email: String,
       password: String,
       address: String,
-      foodCategory:String,
       contactNumber :Number,
-      ownerName:String
+      foodCategory:String,
+      ownerName:String,
+      socialMedia:String,
+      website:String,
 })
 
 const RestaurantModel= mongoose.model("restaurants",RestaurantSchema);
 
 
-module.exports=RestaurantModel
+module.exports =RestaurantModel;

@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo2.png'
 const Nav = () => {
+
   const navStyle = {
     backgroundColor: '#651e3e', // Set the background color here
     padding: '2px', // Add padding for better appearance
-    marginBottom:'10px',
-  
-  };
+    marginBottom: '-20px',};
 
   const linkStyle = {
     color: 'white',
@@ -15,8 +14,8 @@ const Nav = () => {
 
   };
   const style={
-    height:"50px",
-    width: "50px"
+    height:"48%",
+    width: "58%"
   }
 
   return (
@@ -37,8 +36,8 @@ const Nav = () => {
           </Link>
         </li>
         <li className="nav-item p-3">
-          <Link to="/ngo" style={linkStyle}>
-            Ngo
+          <Link to="/about" style={linkStyle}>
+            About
           </Link>
         </li>
       </ul>
